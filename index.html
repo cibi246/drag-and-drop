@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drap and Drop in Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="title">Drag the <span class="Pink">Pink</span>Square to the <span class="orange">Orange</span> Square & <span class="pink-border">Back</span></p>
+    <div class="square-container">
+        <div class="draggable-container" ondragover="onDragOverForPinkSquareContainer(event)" ondrop="onDropForPinkSquareContainer(event)">
+            <div id="draggable-element" draggable="true" ondragstart="onDragStartForPinkSquare(event)" ondragend="onDragEndForPinkSquare(event)">
+            </div>
+        </div>
+
+        <div id="drop-element" ondragover="onDragOverForOrangeSquare(event)" ondrop="onDropForOrangeSquare(event)"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
